@@ -6,8 +6,8 @@ export default function HeroSection() {
     <section className="min-h-screen relative overflow-hidden pt-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-16">
-          <img src="src\components\pegasus.png" alt="Department Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" />
-          <img src="src\components\spc_white.png" alt="College Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain" />
+          <img src="src\components\pegasus.png" alt="Department Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" />
+          <img src="src\components\spc_white.png" alt="College Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" />
         </div>
         
         <motion.div 

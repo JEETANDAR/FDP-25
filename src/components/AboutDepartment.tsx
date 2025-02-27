@@ -12,13 +12,6 @@ export default function AboutDepartment() {
           className="max-w-4xl mx-auto"
         >
           <div className="flex items-center justify-center mb-8">
-            <div className="mr-6">
-              <img 
-                src="src\components\pegasus.png" 
-                alt="Pegasus Logo" 
-                className="w-20 h-20 object-contain" 
-              />
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               About Our Department
             </h2>

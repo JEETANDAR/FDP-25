@@ -3,29 +3,9 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import SpeakerCard from "./SpeakerCard";
+import speakerInfo from '../data/speaker.data';
 
-const speakers = [
-  {
-    name: "Dr. Sarah Johnson",
-    title: "AI Research Director",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-  },
-  {
-    name: "Prof. Michael Chen",
-    title: "Machine Learning Expert",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-  },
-  {
-    name: "Dr. Emily Roberts",
-    title: "Data Science Lead",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-  },
-  {
-    name: "Prof. James Wilson",
-    title: "Cybersecurity Specialist",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-  },
-];
+const speakers = speakerInfo
 
 export default function SpeakersSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +23,7 @@ export default function SpeakersSection() {
   return (
     <section className="py-20 relative">
       <div className="container mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

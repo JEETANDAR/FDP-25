@@ -2,39 +2,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { PlusCircle, MinusCircle } from "lucide-react";
+import speakerInfo from '../data/speaker.data';
 
-const timelineData = [
-  {
-    day: "Day 1",
-    topic: "Introduction to AI and Machine Learning",
-    speaker: "Dr. Sarah Johnson",
-    description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."
-  },
-  {
-    day: "Day 2",
-    topic: "Deep Learning Fundamentals",
-    speaker: "Prof. Michael Chen",
-    description: "Deep Learning has revolutionized the field of AI in recent years. This comprehensive session introduces neural networks, backpropagation, convolutional neural networks (CNNs), and recurrent neural networks (RNNs). Participants will gain insights into training deep models and applying them to solve complex problems."
-  },
-  {
-    day: "Day 3",
-    topic: "Natural Language Processing",
-    speaker: "Dr. Emily Roberts",
-    description: "Natural Language Processing (NLP) enables computers to understand, interpret, and generate human language. This session covers text preprocessing, word embeddings, sentiment analysis, and language models. Practical applications in chatbots, machine translation, and text summarization will be demonstrated."
-  },
-  {
-    day: "Day 4",
-    topic: "Computer Vision Applications",
-    speaker: "Prof. James Wilson",
-    description: "Computer Vision empowers machines to interpret and understand visual information from the world. This session explores image processing techniques, object detection, image classification, and facial recognition. Real-world applications in autonomous vehicles, medical imaging, and surveillance systems will be discussed."
-  },
-  {
-    day: "Day 5",
-    topic: "Future of AI and Ethics",
-    speaker: "Dr. Sarah Johnson",
-    description: "This final session examines the future trajectory of AI and the ethical implications of advanced technologies. Topics include AI governance, privacy concerns, algorithmic bias, and responsible AI development. Participants will engage in discussions about creating AI systems that are fair, transparent, and beneficial to society."
-  }
-];
+
+const timelineData = speakerInfo;
 
 export default function TimelineSection() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -50,7 +21,7 @@ export default function TimelineSection() {
   return (
     <section className="py-20 relative" id="topics">
       <div className="container mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -82,10 +53,10 @@ export default function TimelineSection() {
                     <div className="flex justify-between items-center">
                       <div>
                         <h3 className="text-blue-500 font-semibold mb-2">{item.day}</h3>
-                        <h4 className="text-white text-xl font-bold mb-2">{item.topic}</h4>
-                        <p className="text-gray-400">Speaker: {item.speaker}</p>
+                        <h4 className="text-white text-xl font-bold mb-2">{item.title}</h4>
+                        <p className="text-gray-400">Speaker: {item.name}</p>
                       </div>
-                      <button 
+                      <button
                         onClick={() => toggleExpand(index)}
                         className="transition-all duration-300 ease-in-out"
                         aria-label={expandedIndex === index ? "Collapse details" : "Expand details"}
@@ -97,7 +68,7 @@ export default function TimelineSection() {
                         )}
                       </button>
                     </div>
-                    
+
                     {expandedIndex === index && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}

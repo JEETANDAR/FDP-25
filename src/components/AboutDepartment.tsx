@@ -1,4 +1,4 @@
-
+import text from "../data/department.data";
 import { motion } from "framer-motion";
 
 export default function AboutDepartment() {
@@ -18,6 +18,18 @@ export default function AboutDepartment() {
           </div>
 
           <div className="glass-card p-8">
+            {
+              text.map((item, index) => (
+                <p className="text-gray-300 mb-4" key={index}>
+                  {item}.
+                </p>
+              ))
+            }
+
+            <hr />
+            <br />
+            <br />
+
             <p className="text-gray-300 mb-4">
               The Department of Computer Science at our institution is committed to excellence in education, research, and innovation. Founded with a vision to create technology leaders of tomorrow, we offer a comprehensive curriculum that blends theoretical knowledge with practical skills.
             </p>

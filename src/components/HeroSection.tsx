@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen relative overflow-hidden">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-8 md:mb-10 lg:mb-12">
           <img 
             src="src\components\pegasus.png" 
             alt="Department Logo" 
@@ -22,7 +22,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto mt-16 md:mt-20"
+          className="text-center max-w-4xl mx-auto mt-8 md:mt-10"
         >
           <h3 className="text-blue-500 text-md sm:text-lg font-semibold tracking-wider mb-4">
             DEPARTMENT OF COMPUTER SCIENCE 

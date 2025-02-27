@@ -1,5 +1,7 @@
 
 import HeroSection from "@/components/HeroSection";
+import AboutDepartment from "@/components/AboutDepartment";
+import AboutProgram from "@/components/AboutProgram";
 import SpeakersSection from "@/components/SpeakersSection";
 import TimelineSection from "@/components/TimelineSection";
 import Footer from "@/components/Footer";
@@ -31,6 +33,8 @@ export default function Index() {
         className="relative z-10"
       >
         <HeroSection />
+        <AboutDepartment />
+        <AboutProgram />
         <SpeakersSection />
         <TimelineSection />
         <Footer />

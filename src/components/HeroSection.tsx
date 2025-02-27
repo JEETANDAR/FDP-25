@@ -1,39 +1,48 @@
-
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center mb-8 md:mb-10 lg:mb-12">
-          <img 
-            src="src\components\pegasus.png" 
-            alt="Department Logo" 
-            className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 object-contain" 
-          />
-          <img 
-            src="src\components\spc_white.png" 
-            alt="College Logo" 
-            className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 object-contain" 
-          />
+    <section className="min-h-screen relative overflow-hidden pt-0 mt-0">
+      <div className="w-full p-0 m-0">
+        {/* Header with logos - added 5px padding top */}
+        <div className="flex justify-between items-start w-full p-0 pt-5 m-0">
+          {/* Left logo - PEGASUS */}
+          <div className="p-0 m-0">
+            <img
+              src="/src/components/pegasus.png"
+              alt="PEGASUS Computer Science Association"
+              className="w-44 h-auto object-contain"
+            />
+          </div>
+          
+          {/* Right logo - St. Paul's College */}
+          <div className="p-0 m-0">
+            <img
+              src="/src/components/spc_white.png"
+              alt="St. Paul's College"
+              className="w-40 h-auto object-contain"
+            />
+          </div>
         </div>
         
-        <motion.div 
+        {/* Text content - moved Department of Computer Science down */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto mt-8 md:mt-10"
+          className="text-center max-w-4xl mx-auto mt-12 sm:mt-16 md:mt-20"
         >
-          <h3 className="text-blue-500 text-md sm:text-lg font-semibold tracking-wider mb-4">
-            DEPARTMENT OF COMPUTER SCIENCE 
+          <h3 className="text-blue-500 text-sm sm:text-md md:text-lg font-semibold tracking-wider mb-2">
+            DEPARTMENT OF COMPUTER SCIENCE
           </h3>
-          <h4 className="text-blue-100 text-md sm:text-lg font-semibold tracking-wider mb-4">
-             PRESENTS
+          <h4 className="text-blue-100 text-sm sm:text-md md:text-lg font-semibold tracking-wider mb-2">
+            PRESENTS
           </h4>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 leading-tight">
             International Faculty Development Program
           </h1>
-          <p className="text-gray-400 text-lg md:text-xl">
+          {/* Removed spacing after this text */}
+          <p className="text-gray-400 text-sm sm:text-md md:text-lg mb-0">
             Join us for an enriching academic experience
           </p>
         </motion.div>

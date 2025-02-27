@@ -9,7 +9,7 @@ export default function AboutDepartment() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto text-center"
         >
           <div className="flex items-center justify-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">

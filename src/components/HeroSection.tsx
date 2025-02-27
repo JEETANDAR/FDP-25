@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen relative overflow-hidden pt-8">
+    <section className="min-h-screen relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-16">
-          <img src="src\components\pegasus.png" alt="Department Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" />
-          <img src="src\components\spc_white.png" alt="College Logo" className="w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain" />
+          <img src="src\components\pegasus.png" alt="Department Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain" />
+          <img src="src\components\spc_white.png" alt="College Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain" />
         </div>
         
         <motion.div 

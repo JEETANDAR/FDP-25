@@ -4,17 +4,25 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-16">
-          <img src="src\components\pegasus.png" alt="Department Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain" />
-          <img src="src\components\spc_white.png" alt="College Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain" />
+      <div className="container mx-auto">
+        <div className="flex justify-between items-center">
+          <img 
+            src="src\components\pegasus.png" 
+            alt="Department Logo" 
+            className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 object-contain" 
+          />
+          <img 
+            src="src\components\spc_white.png" 
+            alt="College Logo" 
+            className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 object-contain" 
+          />
         </div>
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto mt-24 md:mt-28"
+          className="text-center max-w-4xl mx-auto mt-16 md:mt-20"
         >
           <h3 className="text-blue-500 text-md sm:text-lg font-semibold tracking-wider mb-4">
             DEPARTMENT OF COMPUTER SCIENCE 

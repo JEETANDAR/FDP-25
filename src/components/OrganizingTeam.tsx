@@ -1,16 +1,9 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 
-const teamMembers = [
-  { name: "Emily Brown", role: "Event Manager", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "Michael Green", role: "Logistics Head", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "Sophia White", role: "Marketing Lead", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "Daniel Black", role: "Sponsorship Head", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "Olivia Gray", role: "Volunteer Coordinator", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "William Blue", role: "Technical Director", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "Ava Silver", role: "Design Lead", image: "https://via.placeholder.com/150", linkedin: "#" },
-  { name: "James Gold", role: "Operations Manager", image: "https://via.placeholder.com/150", linkedin: "#" },
-];
+import { organizingTeam } from '../data/ourTeam.data.js';
+
+const teamMembers = organizingTeam;
 
 const OrganizingTeam: React.FC = () => {
   return (
@@ -27,7 +20,7 @@ const OrganizingTeam: React.FC = () => {
               alt={member.name}
               width={150}
               height={150}
-              className="rounded-lg object-cover p-2 bg-white mb-4"
+              className="rounded-full object-cover p-2 bg-white mb-4 aspect-[2/2]"
             />
             <div className="text-center">
               <h3 className="text-xl font-semibold">{member.name}</h3>

@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.AIImage {
+  position: relative;
+  right: 0; /* Adjust as needed */
+  top: 30px;
+  /* width: 100px; Set width */
+  /* height: auto; Maintain aspect ratio */
+  /* border-radius: 50%; Make it round */
+  /* object-fit: cover; Ensure proper scaling */
+}

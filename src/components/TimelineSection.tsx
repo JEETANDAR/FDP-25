@@ -12,7 +12,7 @@ export default function TimelineSection() {
   };
 
   return (
-    <section className="py-20" id="topics"> 
+    <section className="py-20" id="topics">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ export default function TimelineSection() {
         Topics
       </motion.h2>
       <div className="container mx-auto px-4 flex justify-center">
-      <div className="w-full max-w-2xl bg-white/60 shadow-lg rounded-lg p-6 border border-gray-200">
+        <div className="w-full max-w-2xl bg-white/60 shadow-lg rounded-lg p-6 border border-gray-200">
           {timelineData.map((item, index) => (
             <motion.div
               key={index}
@@ -40,8 +40,17 @@ export default function TimelineSection() {
                 )}
               </div>
               <div className="bg-white/90 p-4 rounded-lg shadow-md border border-gray-300 w-full">
-                <h3 className="text-gray-700 font-semibold">{item.day}</h3>
-                <h3 className="text-blue-700 font-semibold">{item.day}</h3>
+                {/* <h3 className="text-gray-700 font-semibold">{item.day}</h3> */}
+                <h3 className="text-blue-700 font-semibold">
+                  {new Date(item.date).toLocaleString('en-GB', {
+                    day: "2-digit",
+                    month: "short",
+                    year: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true
+                  })}
+                </h3>
                 <h4 className="text-black text-xl font-bold mb-2">{item.title}</h4>
                 <p className="text-gray-600">Speaker: {item.name}</p>
               </div>

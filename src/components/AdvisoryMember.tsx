@@ -1,15 +1,7 @@
 import React from "react";
+import { advisoryBoard } from '../data/ourTeam.data.js';
 
-const advisoryMembers = [
-  "Dr. John Smith - Senior Advisor",
-  "Prof. Emily Johnson - Research Consultant",
-  "Mr. Robert Williams - Industry Expert",
-  "Dr. Sarah Brown - Innovation Strategist",
-  "Ms. Linda Davis - Policy Analyst",
-  "Prof. Michael Wilson - Technical Consultant",
-  "Dr. Jennifer Clark - Ethics & Compliance",
-  "Mr. James Martinez - Financial Advisor"
-];
+const advisoryMembers = advisoryBoard;
 
 const AdvisoryMembers: React.FC = () => {
   return (
@@ -21,7 +13,9 @@ const AdvisoryMembers: React.FC = () => {
             key={index}
             className="bg-white rounded-lg shadow-md p-6 text-center border border-gray-300 hover:shadow-lg transition-transform duration-300 hover:-translate-y-2"
           >
-            <h3 className="text-lg font-semibold text-gray-800">{member}</h3>
+            <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
+            <hr style={{ backgroundColor: "black", height: "2px", border: "none", marginTop: "5px", marginBottom: "10px"}} />
+            <p>{member.role}</p>
           </div>
         ))}
       </div>

@@ -7,6 +7,7 @@ import aadithiyab from "../../staticFiles/aadithiyab.jpeg";
 const speakerInfo = [
     {
         day: "Day 1",
+        date:"01/01/1999",
         name: "MS.Bhavana",
         title: "UI & UX Design",
         image: msBahavanaMS,
@@ -15,6 +16,7 @@ const speakerInfo = [
     },
     {
         day: "Day 2",
+        date:"01/01/1999",
         name: "PROF. PANDURANGAAPPA H",
         title: "5G Technologies & Beyond",
         image: profPANDURANGAPPA,
@@ -23,6 +25,7 @@ const speakerInfo = [
     },
     {
         day: "Day 3",
+        date:"01/01/1999",
         name: "DR. Adithya Pothan Raj. V",
         title: "People-Centric AI In Emerging Technologies",
         image: aadithiyab,
@@ -31,6 +34,7 @@ const speakerInfo = [
     },
     {
         day: "Day 4",
+        date:"01/01/1999",
         name: "DR Arokia Paul Rajan R",
         title: "AWS Essentials: Your Launchpad to the cloud",
         image: arokiaPaul,
@@ -39,6 +43,7 @@ const speakerInfo = [
     },
     {
         day: "Day 5",
+        date: "01/01/9999",
         name: "DR. Sareena Rose",
         title: "Machine Learning in Cybersecurity - Intrusion Detection, Malware Classification",
         image: sereenaRose,

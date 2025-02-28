@@ -5,7 +5,9 @@ import AboutCollege from "@/components/AboutCollege";
 import AboutProgram from "@/components/AboutProgram";
 import SpeakersSection from "@/components/SpeakersSection";
 import TimelineSection from "@/components/TimelineSection";
-import Registration from "@/components/Registration";
+import OrganizingTeam from "@/components/OrganizingTeam";
+import AdvisoryMembers from "@/components/AdvisoryMember";
+import Button from "@/components/button";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
@@ -35,12 +37,14 @@ export default function Index() {
         className="relative z-10"
       >
         <HeroSection />
-        <AboutDepartment />
         <AboutCollege/>
+        <AboutDepartment />
         <AboutProgram />
         <SpeakersSection />
+        <OrganizingTeam/>
+        <AdvisoryMembers/>
         <TimelineSection />
-        <Registration />
+        <Button/>
         <Footer />
       </motion.div>
     </div>

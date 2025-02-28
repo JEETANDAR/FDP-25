@@ -6,7 +6,7 @@ interface SpeakerCardProps {
   image: string;
 }
 
-export default function SpeakerCard({ name, title, image }: SpeakerCardProps) {
+export default function SpeakerCard({ name, role, image }: SpeakerCardProps) {
   const socialIcons = [
     { Icon: Facebook, href: "#" },
     { Icon: Twitter, href: "#" },
@@ -25,9 +25,9 @@ export default function SpeakerCard({ name, title, image }: SpeakerCardProps) {
       </div>
       <h3 className="text-black text-xl font-semibold mb-2">{name}</h3>
       <div className="h-24 overflow-auto mb-4">
-        <p className="text-gray-600 text-sm leading-tight">{title}</p>
+        <p className="text-gray-600 text-sm leading-tight">{role}</p>
       </div>
-      <div className="flex flex-wrap gap-3 justify-center mt-auto">
+      {/* <div className="flex flex-wrap gap-3 justify-center mt-auto">
         {socialIcons.map(({ Icon, href }, index) => (
           <a
             key={index}
@@ -37,7 +37,7 @@ export default function SpeakerCard({ name, title, image }: SpeakerCardProps) {
             <Icon size={20} />
           </a>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

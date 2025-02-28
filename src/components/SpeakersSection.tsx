@@ -1,27 +1,57 @@
-
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import SpeakerCard from "./SpeakerCard";
 import speakerInfo from '../data/speaker.data';
 
-const speakers = speakerInfo
+const speakers = speakerInfo;
 
 export default function SpeakersSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  
+  // Duplicate the speakers array to create a seamless loop effect
+  const duplicatedSpeakers = [...speakers, ...speakers];
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 350;
-      scrollContainerRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+  // Auto-scrolling effect
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+    
+    let animationId: number;
+    let scrollPosition = 0;
+    const scrollSpeed = 0.5; // Adjust for faster/slower scrolling
+    
+    const scroll = () => {
+      scrollPosition += scrollSpeed;
+      
+      // Reset scroll position when we've scrolled through the first set of items
+      if (scrollPosition >= (scrollContainer.scrollWidth / 2)) {
+        scrollPosition = 0;
+      }
+      
+      scrollContainer.scrollLeft = scrollPosition;
+      animationId = requestAnimationFrame(scroll);
+    };
+    
+    animationId = requestAnimationFrame(scroll);
+    
+    // Pause scrolling when hovering
+    const pauseScroll = () => cancelAnimationFrame(animationId);
+    const resumeScroll = () => {
+      animationId = requestAnimationFrame(scroll);
+    };
+    
+    scrollContainer.addEventListener("mouseenter", pauseScroll);
+    scrollContainer.addEventListener("mouseleave", resumeScroll);
+    
+    return () => {
+      cancelAnimationFrame(animationId);
+      scrollContainer.removeEventListener("mouseenter", pauseScroll);
+      scrollContainer.removeEventListener("mouseleave", resumeScroll);
+    };
+  }, []);
 
   return (
-    <section className="py-20 relative">
+    <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -31,39 +61,37 @@ export default function SpeakersSection() {
         >
           Our Key Speakers
         </motion.h2>
-
+        
         <div className="relative">
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
-          >
-            <ChevronLeft size={24} />
-          </button>
-
           <div
             ref={scrollContainerRef}
-            className="flex overflow-x-auto gap-6 pb-8 scrollbar-hide snap-x snap-mandatory"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            className="flex overflow-x-auto gap-6 pb-8 scrollbar-hide"
+            style={{ 
+              scrollbarWidth: "none", 
+              msOverflowStyle: "none",
+              // Hide scrollbar for Chrome/Safari/Opera
+              WebkitOverflowScrolling: "touch"
+            }}
           >
-            {speakers.map((speaker, index) => (
+            {/* Use CSS to hide scrollbar for Chrome/Safari/Opera */}
+            <style jsx>{`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
+            
+            {duplicatedSpeakers.map((speaker, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="snap-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: Math.min(index * 0.1, 1) }}
+                className="flex-shrink-0"
               >
                 <SpeakerCard {...speaker} />
               </motion.div>
             ))}
           </div>
-
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
-          >
-            <ChevronRight size={24} />
-          </button>
         </div>
       </div>
     </section>

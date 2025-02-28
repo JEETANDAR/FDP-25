@@ -1,9 +1,11 @@
 
 import HeroSection from "@/components/HeroSection";
 import AboutDepartment from "@/components/AboutDepartment";
+import AboutCollege from "@/components/AboutCollege";
 import AboutProgram from "@/components/AboutProgram";
 import SpeakersSection from "@/components/SpeakersSection";
 import TimelineSection from "@/components/TimelineSection";
+import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
@@ -34,9 +36,11 @@ export default function Index() {
       >
         <HeroSection />
         <AboutDepartment />
+        <AboutCollege/>
         <AboutProgram />
         <SpeakersSection />
         <TimelineSection />
+        <Registration />
         <Footer />
       </motion.div>
     </div>

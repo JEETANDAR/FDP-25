@@ -33,10 +33,10 @@ export default function HeroSection() {
           className="text-center max-w-4xl mx-auto mt-8 sm:mt-12 md:mt-16 px-4 sm:px-6 md:px-8 mb-1"
         >
           {/* Added spacing above "DEPARTMENT OF COMPUTER SCIENCE" */}
-          <h3 className="text-blue-500 text-sm sm:text-md md:text-lg font-semibold tracking-wider mb-5">
+          <h3 className="text-blue-500 text-lg sm:text-md md:text-lg font-semibold tracking-wider mb-6">
             DEPARTMENT OF COMPUTER SCIENCE
           </h3>
-          <h4 className="text-blue-100 text-sm sm:text-md md:text-lg font-semibold tracking-wider mb-2">
+          <h4 className="text-blue-100 text-sm sm:text-md md:text-lg font-semibold tracking-wider mb-5">
             PRESENTS
           </h4>
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">

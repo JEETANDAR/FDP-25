@@ -25,11 +25,7 @@ export default function AboutCollege() {
           <div className="glass-card p-8 bg-white/40 rounded-lg text-black shadow-lg border border-gray-700 flex flex-col md:flex-row items-center md:items-start gap-6">
             {/* Iframe on the left side */}
             <div className="w-full md:w-1/3">
-              <iframe 
-                src="https://via.placeholder.com/600x400" 
-                title="College Image"
-                className="w-full h-40 md:h-60 border-2 border-gray-700 rounded-lg shadow-lg"
-              ></iframe>
+            <img src="https://images.shiksha.com/mediadata/images/1491913463phpLnlafB_205x160.jpg" alt="" />
             </div>
 
             {/* Text on the right side */}

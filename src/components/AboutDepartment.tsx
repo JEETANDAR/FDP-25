@@ -11,39 +11,25 @@ export default function AboutProgram() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-8">
             About Our Department
           </h2>
-
-          <div className="glass-card p-8">
-            {
-              text.map((item, index) => (
-                <p className="text-gray-300 mb-4" key={index}>
-                  {item}.
-                </p>
-              ))
-            }
-
-            <hr />
-            <br />
-            <br />
-
-            <p className="text-gray-300 mb-4">
-              The Department of Computer Science at our institution is committed to excellence in education, research, and innovation. Founded with a vision to create technology leaders of tomorrow, we offer a comprehensive curriculum that blends theoretical knowledge with practical skills.
+          
+          <div className="glass-card p-8 bg-black-900">
+            <p className="text-black-300 mb-4 p-2  rounded">
+            The Department of Computer Science offers two specialized undergraduate programs: Bachelor 
+of Computer Applications (BCA) and BSc in Computer Science, Psychology and Journalism. 
+These programs are designed to address the increasing demand for skilled professionals in the 
+fast-growing IT and software industries. 
             </p>
-            <p className="text-gray-300 mb-4">
-              The Department of Computer Science at our institution is committed to excellence in education, research, and innovation. Founded with a vision to create technology leaders of tomorrow, we offer a comprehensive curriculum that blends theoretical knowledge with practical skills.
+            <p className="text-black-300 mb-4 p-2  rounded">
+            he BCA program focuses on building strong technical expertise, including software 
+development, programming languages, web designing, multimedia, databases, and operating 
+systems. The BSc program provides a comprehensive curriculum that blends core computer 
+science principles with interdisciplinary knowledge from psychology and journalism, preparing 
+students for diverse career paths.
             </p>
-            <p className="text-gray-300 mb-4">
-
-              Our faculty comprises renowned experts in various domains of computer science, including artificial intelligence, machine learning, cybersecurity, and software engineering. We pride ourselves on providing state-of-the-art facilities and a conducive learning environment.
-
-            </p>
-
-            <p className="text-gray-300 mb-4">
-              The Pegasus symbol represents our aspiration to soar high and achieve greatness in the field of computer science and technology. It embodies our commitment to excellence, innovation, and the pursuit of knowledge without boundaries.
-            </p>
-
+ 
           </div>
         </motion.div>
       </div>

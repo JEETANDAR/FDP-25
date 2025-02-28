@@ -7,7 +7,7 @@ import aadithiyab from "../../staticFiles/aadithiyab.jpeg";
 const speakerInfo = [
     {
         day: "Day 1",
-        name: "MS. Bhavana MS",
+        name: "MS.Bhavana",
         title: "UI & UX Design",
         image: msBahavanaMS,
         date: new Date('2025-03-10'),

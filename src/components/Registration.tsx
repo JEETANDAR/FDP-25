@@ -61,19 +61,7 @@ const Registration = () => {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-50">
       {/* Light theme background */}
-      <div className="fixed inset-0 -z-10">
-        {/* Gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-80 to-purple-50" />
-        
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(38, 89, 171, 0.8)_1px,transparent_1px),linear-gradient(to_right,rgba(30, 62, 113, 0.61)_1px,transparent_10px)] bg-[size:64px_64px]" />
-        
-        {/* Subtle glow effects */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-blue-200/30 rounded-full filter blur-[128px] animate-pulse" />
-          <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-purple-200/30 rounded-full filter blur-[128px] animate-pulse delay-700" />
-        </div>
-      </div>
+      
 
       <div className="container px-4 py-8 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto">

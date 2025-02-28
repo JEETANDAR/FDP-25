@@ -7,6 +7,7 @@ import aadithiyab from "../../staticFiles/aadithiyab.jpeg";
 const speakerInfo = [
     {
         day: "Day 1",
+        date:"01/01/1999",
         name: "MS.Bhavana",
         title: "UI & UX Design",
         role: "UI & UX Engineer At Renesas - Canada",
@@ -16,6 +17,7 @@ const speakerInfo = [
     },
     {
         day: "Day 2",
+        date:"01/01/1999",
         name: "PROF. PANDURANGAAPPA H",
         title: "5G Technologies & Beyond",
         role: "Don Bosco Institute of Management Studies & Computer Applications",
@@ -25,6 +27,7 @@ const speakerInfo = [
     },
     {
         day: "Day 3",
+        date:"01/01/1999",
         name: "DR. Adithya Pothan Raj. V",
         title: "People-Centric AI In Emerging Technologies",
         role: "Lead Architect - Cognizant Technology Solutions - Canada",
@@ -34,6 +37,7 @@ const speakerInfo = [
     },
     {
         day: "Day 4",
+        date:"01/01/1999",
         name: "DR Arokia Paul Rajan R",
         title: "AWS Essentials: Your Launchpad to the cloud",
         role: "Professor at Christ University Lavasa Campus-Pune",
@@ -43,6 +47,7 @@ const speakerInfo = [
     },
     {
         day: "Day 5",
+        date: "01/01/9999",
         name: "DR. Sareena Rose",
         title: "Machine Learning in Cybersecurity - Intrusion Detection, Malware Classification",
         role: "HOD - Department of Computer Science Vimal College Thrissur",

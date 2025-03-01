@@ -1,17 +1,22 @@
 import MrPrakash from "../../staticFiles/ourTeams/mrPrakashV.jpeg";
+import MrSuhas from "../../staticFiles/ourTeams/mrSuhas.jpg";
 import msLincy from "../../staticFiles/ourTeams/missLincy.jpg";
+import msGreeshma from "../../staticFiles/ourTeams/missGreeshma.jpg";
+import msManjula from "../../staticFiles/ourTeams/missManjula.jpg";
+import FrThomasMJ from "../../staticFiles/ourTeams/FrThomasMJ.jpg";
+import FrDrShaijuJoseph from "../../staticFiles/ourTeams/FrDrShaijuJoseph.jpg";
 
 const faculty = [
     {
         name: "Rev. Fr. Dr. Thomas MJ",
         role: "Principal",
-        image: MrPrakash,
+        image: FrThomasMJ,
         linkedin: "#",
     },
     {
         name: "Rev. Fr. Dr. Shaiju Joseph",
         role: "Vice Principal & Adminisrator",
-        image: MrPrakash,
+        image: FrDrShaijuJoseph,
         linkedin: "#",
     },
     {
@@ -21,27 +26,27 @@ const faculty = [
         linkedin: "#",
     },
     {
-        name: "Mr Suhas",
-        role: "HOD",
-        image: MrPrakash,
+        name: "Mr. Suhas Aithal V",
+        role: "Assistant Professor",
+        image: MrSuhas,
         linkedin: "#",
     },
     {
         name: "Miss Lincy J",
-        role: "HOD",
+        role: "Assistant Professor",
         image: msLincy,
         linkedin: "#",
     },
     {
-        name: "Miss Greeshma",
-        role: "HOD",
-        image: MrPrakash,
+        name: "Ms. Greeshma V.S.",
+        role: "Assistant Professor",
+        image: msGreeshma,
         linkedin: "#",
     },
     {
-        name: "Miss Manjula",
-        role: "HOD",
-        image: MrPrakash,
+        name: "Ms.Manjula S",
+        role: "Assistant Professor",
+        image: msManjula,
         linkedin: "#",
     }
 ]

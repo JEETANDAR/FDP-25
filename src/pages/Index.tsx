@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { motion } from "framer-motion";
 
 import HeroSection from "@/components/HeroSection";
@@ -38,19 +37,17 @@ export default function Index() {
         transition={{ duration: 0.6 }}
         className="relative z-10"
       >
-        <Suspense fallback={<div>Loading...</div>}>
-          <HeroSection />
-          <AboutCollege />
-          <AboutDepartment />
-          <AboutProgram />
-          <SpeakersSection />
-          <OrganizingTeam />
-          <AdvisoryMembers />
-          <TimelineSection />
-          <Button />
-          <ContactUs />
-          <Footer />
-        </Suspense>
+        <HeroSection />
+        <AboutCollege />
+        <AboutDepartment />
+        <AboutProgram />
+        <SpeakersSection />
+        <OrganizingTeam />
+        <AdvisoryMembers />
+        <TimelineSection />
+        <Button />
+        <ContactUs />
+        <Footer />
       </motion.div>
     </div>
   );

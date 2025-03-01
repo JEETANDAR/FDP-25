@@ -22,7 +22,7 @@ const speakerInfo = [
         date:"01/01/1999",
         name: "PROF. PANDURANGAAPPA H".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "5G Technologies & Beyond",
-        role: "Don Bosco Institute of Management Studies & Computer Applications",
+        role: "HOD - Department of computer Applications Don Bosco Institute of Management Studies & Computer Applications",
         image: profPANDURANGAPPA,
         date: new Date(`2025-03-11${time}`),
         description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."
@@ -42,7 +42,7 @@ const speakerInfo = [
         date:"01/01/1999",
         name: "DR Arokia Paul Rajan R".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "AWS Essentials: Your Launchpad to the cloud",
-        role: "Professor at Christ University Lavasa Campus-Pune",
+        role: "Associate Professor | School of Science Christ University Lavasa Campus Pune",
         image: arokiaPaul,
         date: new Date(`2025-03-13${time}`),
         description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."
@@ -52,7 +52,7 @@ const speakerInfo = [
         date: "01/01/9999",
         name: "DR. Sareena Rose".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "Machine Learning in Cybersecurity - Intrusion Detection, Malware Classification",
-        role: "HOD - Department of Computer Science Vimal College Thrissur",
+        role: "HOD - Department of Computer Science Vimala College Thrissur",
         image: sereenaRose,
         date: new Date(`2025-03-14${time}`),
         description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."

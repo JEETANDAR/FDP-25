@@ -13,7 +13,11 @@ const SpeakersSection = () => {
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="bg-gray-200 rounded-xl shadow-lg p-6 min-w-[300px] max-w-[300px] mx-4 h-auto flex flex-col border border-gray-300 hover:shadow-xl transition-shadow duration-300"
+              className="bg-gray-200 rounded-xl shadow-lg p-6 mx-4 h-auto flex flex-col border border-gray-300 hover:shadow-xl transition-shadow duration-300"
+              style={{
+                minWidth: "250px",
+                maxWidth: speaker.name.length > 20 ? "350px" : "300px", // Adjust width dynamically
+              }}
             >
               <div className="flex flex-col items-center p-4">
                 <img
@@ -23,7 +27,12 @@ const SpeakersSection = () => {
                   height={180}
                   className="rounded-lg object-cover mb-2 p-2 bg-red aspect-[1]"
                 />
-                <h3 className="text-xl font-semibold text-center">{speaker.name}</h3>
+                <h3
+                  className="text-xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis"
+                  style={{ maxWidth: "90%" }}
+                >
+                  {speaker.name}
+                </h3>
                 <p className="text-gray-600 text-center">{speaker.role}</p>
               </div>
             </div>

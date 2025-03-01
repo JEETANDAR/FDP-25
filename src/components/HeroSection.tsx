@@ -12,14 +12,10 @@ export default function HeroSection() {
         {/* Gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-80 to-purple-50" />
         <img 
-    className="absolute right-0 top-0 w-full h-full object-cover sm:w-1/2 sm:right-0 sm:translate-x-0 translate-x-[-25%]"
+    className="absolute top-0 right-0  left-30 w-full h-full object-cover sm:w-1/2 sm:right-0"
     src={AI} 
     alt="AIIMG"
 />
-
-
-
-
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(38, 89, 171, 0.8)_1px,transparent_1px),linear-gradient(to_right,rgba(30, 62, 113, 0.61)_1px,transparent_10px)] bg-[size:64px_64px]" />
@@ -61,11 +57,15 @@ export default function HeroSection() {
           className="text-center max-w-4xl mx-auto mt-8 sm:mt-12 md:mt-16 px-4 sm:px-6 md:px-8 mb-3"
         >
           {/* Added spacing above "DEPARTMENT OF COMPUTER SCIENCE" */}
-          <h3 className="text-blue-900 text-lg sm:text-md md:text-lg lg:text-xl font-bold tracking-widest mb-4 font-mono">
-            DEPARTMENT OF COMPUTER SCIENCE
-          </h3>
+          
+
+          <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono">
+          DEPARTMENT OF COMPUTER SCIENCE
+          </h4>
 
 
+
+        
           <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono">
             PRESENTS
           </h4>

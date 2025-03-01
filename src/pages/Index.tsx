@@ -1,4 +1,7 @@
+import { lazy, Suspense, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
+import Loading from "@/components/Loading";
 import HeroSection from "@/components/HeroSection";
 import AboutDepartment from "@/components/AboutDepartment";
 import AboutCollege from "@/components/AboutCollege";
@@ -10,9 +13,15 @@ import AdvisoryMembers from "@/components/AdvisoryMember";
 import Button from "@/components/button";
 import ContactUs from "@/components/contact";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
 
 export default function Index() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 6000); // 15 seconds loading time
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen relative">
       {/* Animated background */}
@@ -31,24 +40,30 @@ export default function Index() {
       </div>
 
       {/* Main content */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="relative z-10"
-      >
-        <HeroSection />
-        <AboutCollege/>
-        <AboutDepartment />
-        <AboutProgram />
-        <SpeakersSection />
-        <OrganizingTeam/>
-        <AdvisoryMembers/>
-        <TimelineSection />
-        <Button/>
-        <ContactUs/>
-        <Footer />
-      </motion.div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="relative z-10"
+        >
+          <Suspense fallback={<Loading />}> 
+            <HeroSection />
+            <AboutCollege />
+            <AboutDepartment />
+            <AboutProgram />
+            <SpeakersSection />
+            <OrganizingTeam />
+            <AdvisoryMembers />
+            <TimelineSection />
+            <Button />
+            <ContactUs />
+            <Footer />
+          </Suspense>
+        </motion.div>
+      )}
     </div>
   );
 }

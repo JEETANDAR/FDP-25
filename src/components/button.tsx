@@ -7,6 +7,7 @@ const Button = () => {
       <button
         className="btn"
         onClick={() => window.location.href = "https://pages.razorpay.com/pl_Q0zpHF5F7YDlVQ/view"}
+        id="btn"
       >
         Register Now
       </button>

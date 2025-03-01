@@ -19,7 +19,7 @@ export default function TimelineSection() {
         transition={{ duration: 0.6 }}
         className="text-3xl md:text-4xl font-bold text-black text-center mb-12"
       >
-        Topics
+        Schedule
       </motion.h2>
       <div className="container mx-auto px-4 flex justify-center">
         <div className="w-full max-w-2xl bg-white/60 shadow-lg rounded-lg p-6 border border-gray-200">

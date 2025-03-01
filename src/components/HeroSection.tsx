@@ -71,7 +71,7 @@ export default function HeroSection() {
 
 
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-black mb-4 leading-tight font-serif relative">
-            <span className="absolute top-1 left-1 text-gray-900 opacity-40 blur-sm">International Faculty Development Program</span>
+            <span className="absolute top-1 left-1 text-gray-1000 opacity-30 blur-sm">International Faculty Development Program</span>
             International Online Faculty Development Program
           </h1>
 

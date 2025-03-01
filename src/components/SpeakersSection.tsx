@@ -25,7 +25,7 @@ const SpeakersSection = () => {
                   alt={speaker.name}
                   width={180}
                   height={180}
-                  className="rounded-lg object-cover mb-2 p-2 bg-red aspect-[1]"
+                  className="shadow-lg shadow-gray-10/50 rounded-2xl object-cover mb-2 p-2 bg-red aspect-[1]"
                 />
                 <h3
                   className="text-xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis"

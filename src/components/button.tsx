@@ -8,7 +8,7 @@ const Button = () => {
         className="btn"
         onClick={() => window.location.href = "https://pages.razorpay.com/pl_Q0zpHF5F7YDlVQ/view"}
       >
-        Submit and Register
+        Register Now
       </button>
     </StyledWrapper>
   );

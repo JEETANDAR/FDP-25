@@ -11,25 +11,25 @@ const faculty = [
         name: "Rev. Fr. Dr. Thomas MJ",
         role: "Principal",
         image: FrThomasMJ,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/thomas-mj-5649b1137/",
     },
     {
         name: "Rev. Fr. Dr. Shaiju Joseph",
         role: "Vice Principal & Adminisrator",
         image: FrDrShaijuJoseph,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/shaiju-joseph-977b8449/",
     },
     {
         name: "Mr Prakash V",
         role: "Assistant Professor & In-Charge Department of Computer Science",
         image: MrPrakash,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/prakash88/",
     },
     {
         name: "Ms. Greeshma V.S.",
         role: "Assistant Professor Department of Computer Science",
         image: msGreeshma,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/greeshma-vs-7b074bba/",
     },
     {
         name: "Ms.Manjula S",
@@ -41,13 +41,13 @@ const faculty = [
         name: "Mr. Suhas Aithal V",
         role: "Assistant Professor Department of Computer Science",
         image: MrSuhas,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/suhas-aithal-v-834511b4/",
     },
     {
         name: "Ms Lincy J",
         role: "Assistant Professor Department of Computer Science",
         image: msLincy,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/lincy-joseph-a81134174",
     }
 ]
 

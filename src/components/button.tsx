@@ -22,7 +22,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   height: auto; /* Adjust height for better responsiveness */
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 93%; /* Default position for most screens */
   left: 50%;
   transform: translate(-50%, -50%);

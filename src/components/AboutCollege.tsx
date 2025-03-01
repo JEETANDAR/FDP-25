@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { collegeIframeURL } from '../data/college.data.js';
-
 export default function AboutCollege() {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -25,13 +23,11 @@ export default function AboutCollege() {
           </h2>
 
           <div className="glass-card p-8 bg-white/40 rounded-lg text-black shadow-lg border border-gray-700 flex flex-col md:flex-row items-center md:items-start gap-6">
-            {/* Iframe on the left side */}
+            {/* Placeholder for Image on the left side */}
             <div className="w-full md:w-1/3">
-              <iframe
-                src={collegeIframeURL}
-                title="College Image"
-                className="w-full h-40 md:h-60 border-2 border-gray-700 rounded-lg shadow-lg"
-              ></iframe>
+              {/* Add your image here manually */}
+              <img src="https://scontent.fblr1-9.fna.fbcdn.net/v/t39.30808-6/440343004_960191102782198_3383943898261859210_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_UkCFmBpDVoQ7kNvgFyZADo&_nc_oc=Adjc0UKxIVlW8ZSzW3Ftm4RpWCs8tdeG3wBBZIcYnFqCG0smFRPyDS1vTY0anXE1lfZ0sMs7HanXV9hHPoqAxhEZ&_nc_zt=23&_nc_ht=scontent.fblr1-9.fna&_nc_gid=AksD4bRx4lq0yRcnKmOlFJR&oh=00_AYBVIJLOUN5dixKs4RQtQbvDqH3NbTOvmxKq68cKR5ryCQ&oe=67C8F86D" alt="" 
+              className="w-full h-60 md:h-90 border-2 border-gray-700 rounded-lg shadow-lg object-cover" />
             </div>
 
             {/* Text on the right side */}

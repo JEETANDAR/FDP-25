@@ -18,25 +18,24 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">About Us</h3>
             <p className="text-gray-400">
-              Department of Computer Science is committed to excellence in teaching,
-              research, and innovation.
+            The Department of Computer Science offers two specialized undergraduate programs: Bachelor of Computer Applications (BCA) and BSc in Computer Science, Psychology and Journalism. These programs are designed to address the increasing demand for skilled professionals in the fast-growing IT and software industries.
             </p>
           </div>
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#btn" className="text-gray-400 hover:text-white transition-colors">
                   Registration
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#topics" className="text-gray-400 hover:text-white transition-colors">
                   Program Schedule
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact
                 </a>
               </li>

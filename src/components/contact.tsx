@@ -8,7 +8,7 @@ const ContactUs: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center p-6">
+    <div className="flex flex-col items-center justify-center p-6 " id="contact">
       {/* Contact title outside the box */}
       <h2 className="text-xl md:text-2xl font-bold text-center w-full pt-4 pb-2 mb-6">Get in touch with us</h2>
 

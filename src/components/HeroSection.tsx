@@ -5,12 +5,21 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Theme */}
+      
 
       <div className="fixed inset-0 -z-10">
         
         {/* Gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-80 to-purple-50" />
-        <img style={{position: "absolute", right: "0px", top: "60px"}} src={AI} alt="" />
+        <img 
+    className="absolute right-0 top-0 w-full h-full object-cover sm:w-1/2 sm:right-0 sm:translate-x-0 translate-x-[-25%]"
+    src={AI} 
+    alt="AIIMG"
+/>
+
+
+
+
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(38, 89, 171, 0.8)_1px,transparent_1px),linear-gradient(to_right,rgba(30, 62, 113, 0.61)_1px,transparent_10px)] bg-[size:64px_64px]" />

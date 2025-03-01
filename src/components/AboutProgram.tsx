@@ -15,13 +15,13 @@ export default function AboutProgram() {
           </h2>
           <div className="glass-card p-8 bg-white/40 rounded-lg shadow-lg border border-gray-700">
           
-            <p className="text-black mb-4">
+            <p className="text-black mb-4 text-center">
               The International Faculty Development Program is a prestigious initiative designed to enhance members' academic and professional capabilities across educational institutions worldwide. This program offers a unique platform for knowledge exchange, skill development, and networking among educators from diverse backgrounds.
             </p>
-            <p className="text-black mb-4">
+            <p className="text-black mb-4 text-center">
               Participants will engage in understanding, integrating, and applying new technologies in education to enhance teaching methodologies, student engagement, and learning outcomes. The program features workshops, interactive sessions, and hands-on training from leading experts in their respective fields.
             </p>
-            <p className="text-black">
+            <p className="text-black text-center">
               By participating in this program, members can expand their knowledge base, refine their teaching approaches, and develop collaborative relationships with peers from around the globe. The program aims to create a community of educators committed to excellence and continuous improvement in higher education.
             </p>
           

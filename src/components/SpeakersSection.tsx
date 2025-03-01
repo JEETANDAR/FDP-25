@@ -8,7 +8,7 @@ const SpeakersSection = () => {
   return (
     <div className="w-full py-10">
       <h2 className="text-3xl font-bold text-center mb-6">Our Speakers</h2>
-      <Marquee gradient={false} speed={60} pauseOnClick={true}>
+      <Marquee gradient={false} speed={40} pauseOnClick={true}>
         <div className="flex gap-6 px-4">
           {speakers.map((speaker, index) => (
             <div
@@ -21,7 +21,7 @@ const SpeakersSection = () => {
                   alt={speaker.name}
                   width={180}
                   height={180}
-                  className="rounded-lg object-cover mb-2 p-2 bg-white aspect-[1]"
+                  className="rounded-lg object-cover mb-2 p-2 bg-red aspect-[1]"
                 />
                 <h3 className="text-xl font-semibold text-center">{speaker.name}</h3>
                 <p className="text-gray-600 text-center">{speaker.role}</p>

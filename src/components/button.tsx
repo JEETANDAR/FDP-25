@@ -4,7 +4,12 @@ import styled from "styled-components";
 const Button = () => {
   return (
     <StyledWrapper>
-      <button className="btn">Submit and Register</button>
+      <button
+        className="btn"
+        onClick={() => window.location.href = "https://pages.razorpay.com/pl_Q0zpHF5F7YDlVQ/view"}
+      >
+        Submit and Register
+      </button>
     </StyledWrapper>
   );
 };

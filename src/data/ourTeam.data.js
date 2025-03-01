@@ -21,32 +21,32 @@ const faculty = [
     },
     {
         name: "Mr Prakash V",
-        role: "HOD",
+        role: "Assistant Professor & In-Charge Department of Computer Science",
         image: MrPrakash,
         linkedin: "#",
     },
     {
-        name: "Mr. Suhas Aithal V",
-        role: "Assistant Professor",
-        image: MrSuhas,
-        linkedin: "#",
-    },
-    {
-        name: "Miss Lincy J",
-        role: "Assistant Professor",
-        image: msLincy,
-        linkedin: "#",
-    },
-    {
         name: "Ms. Greeshma V.S.",
-        role: "Assistant Professor",
+        role: "Assistant Professor Department of Computer Science",
         image: msGreeshma,
         linkedin: "#",
     },
     {
         name: "Ms.Manjula S",
-        role: "Assistant Professor",
+        role: "Assistant Professor Department of Computer Science",
         image: msManjula,
+        linkedin: "#",
+    },
+    {
+        name: "Mr. Suhas Aithal V",
+        role: "Assistant Professor Department of Computer Science",
+        image: MrSuhas,
+        linkedin: "#",
+    },
+    {
+        name: "Ms Lincy J",
+        role: "Assistant Professor Department of Computer Science",
+        image: msLincy,
         linkedin: "#",
     }
 ]
@@ -61,6 +61,10 @@ const advisoryBoardMembers = [
         role: "Head, Department of Humanities"
     },
     {
+        name: "Dr. Prashanth V",
+        role: "Head, PG Department of Journalism and Mass Communication"
+    },
+    {
         name: "Dr. Trapty Sharma",
         role: "In-charge, Department of Languages"
     },
@@ -71,7 +75,23 @@ const advisoryBoardMembers = [
 
 ]
 
+const contacts = [
+    {
+        name: "Mr Prakash V",
+        tell: "+91 9535858730"
+    },
+    {
+        name: "Mr. Suhas Aithal V",
+        tell: "+91 9738291164"
+    },
+    {
+        name: "Miss Lincy J",
+        tell: "+91 9738710164"
+    },
+]
+
 export {
     faculty as organizingTeam,
     advisoryBoardMembers as advisoryBoard,
+    contacts as contact,
 }

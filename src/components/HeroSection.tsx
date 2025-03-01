@@ -1,21 +1,23 @@
 import { motion } from "framer-motion";
 import AI from '../../staticFiles/heroPage/AIBg.png'
+import collegeLogo from "/src/components/st pauls final black.png";
+import deptLogo from "/src/components/pegasus black.png";
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Theme */}
-      
+
 
       <div className="fixed inset-0 -z-10">
-        
+
         {/* Gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-80 to-purple-50" />
-        <img 
-    className="absolute right-0 top-0 w-full h-full object-cover sm:w-1/2 sm:right-0 sm:translate-x-0 translate-x-[-25%]"
-    src={AI} 
-    alt="AIIMG"
-/>
+        <img
+          className="absolute right-0 top-0 w-full opacity-70 h-full object-cover sm:w-1/2 sm:right-0 sm:translate-x-0 translate-x-[-25%]"
+          src={AI}
+          alt="AIIMG"
+        />
 
 
 
@@ -37,7 +39,7 @@ export default function HeroSection() {
           {/* Left logo - PEGASUS */}
           <div className="p-0 m-0">
             <img
-              src="/src/components/pegasus black.png"
+              src={deptLogo}
               alt="PEGASUS Computer Science Association"
               className="w-24 h-auto object-contain sm:w-28 md:w-32 lg:w-36"
             />
@@ -46,7 +48,7 @@ export default function HeroSection() {
           {/* Right logo - St. Paul's College */}
           <div className="p-0 m-0">
             <img
-              src="/src/components/st pauls final black.png"
+              src={collegeLogo}
               alt="St. Paul's College"
               className="w-36 h-auto object-contain sm:w-44 md:w-52 lg:w-64 xl:w-72"
             />

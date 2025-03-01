@@ -5,9 +5,12 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Theme */}
+
       <div className="fixed inset-0 -z-10">
+        
         {/* Gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-80 to-purple-50" />
+        <img style={{position: "absolute", right: "0px", top: "60px"}} src={AI} alt="" />
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(38, 89, 171, 0.8)_1px,transparent_1px),linear-gradient(to_right,rgba(30, 62, 113, 0.61)_1px,transparent_10px)] bg-[size:64px_64px]" />
@@ -52,8 +55,6 @@ export default function HeroSection() {
           <h3 className="text-blue-900 text-lg sm:text-md md:text-lg lg:text-xl font-bold tracking-widest mb-4 font-mono">
             DEPARTMENT OF COMPUTER SCIENCE
           </h3>
-          
-          {/* <img className="AIImage" src={AI} alt="AI Image" /> */}
 
 
           <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono">
@@ -72,7 +73,6 @@ export default function HeroSection() {
           <p className="text-gray-600 text-sm sm:text-md md:text-lg mb-3">
             Join us for an enriching academic experience
           </p>
-
         </motion.div>
       </div>
     </section>

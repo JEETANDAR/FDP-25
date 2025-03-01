@@ -35,7 +35,7 @@ const faculty = [
         name: "Ms.Manjula S",
         role: "Assistant Professor <br> Department of Computer Science",
         image: msManjula,
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/manjula-s-458a74353",
     },
     {
         name: "Mr. Suhas Aithal V",

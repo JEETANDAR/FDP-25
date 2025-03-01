@@ -46,13 +46,14 @@ export default function Page() {
             <div className="w-full md:w-3/4">
               <h3 className="text-white font-semibold text-lg mb-4 text-center">Locate Us</h3>
               <iframe
-                src={collegeIframeURL}
-                title="College Location"
-                className="w-full h-60 md:h-80 border-2 border-gray-700 rounded-lg shadow-lg"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+  src={collegeIframeURL}
+  title="College Location"
+  className="w-full h-40 md:h-60 border-2 border-gray-700 rounded-lg shadow-lg"
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8">

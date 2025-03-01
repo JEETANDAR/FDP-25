@@ -57,19 +57,13 @@ export default function HeroSection() {
           {/* Added spacing above "DEPARTMENT OF COMPUTER SCIENCE" */}
 
 
-          <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono">
-            DEPARTMENT OF COMPUTER SCIENCE
-          </h4>
-
-
-
+          <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono pt-5 sm:pt-0">
+  DEPARTMENT OF COMPUTER SCIENCE
+</h4>
 
           <h4 className="text-blue-950 text-md sm:text-lg md:text-xl lg:text-2xl font-bold tracking-widest mb-5 font-mono">
             PRESENTS
           </h4>
-
-
-
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-black mb-4 leading-tight font-serif relative">
             <span className="absolute top-1 left-1 text-gray-1000 opacity-30 blur-sm">International Faculty Development Program</span>
             International Online Faculty Development Program

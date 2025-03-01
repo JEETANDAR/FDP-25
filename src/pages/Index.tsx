@@ -8,6 +8,7 @@ import TimelineSection from "@/components/TimelineSection";
 import OrganizingTeam from "@/components/OrganizingTeam";
 import AdvisoryMembers from "@/components/AdvisoryMember";
 import Button from "@/components/button";
+import ContactUs from "@/components/contact";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
@@ -45,6 +46,7 @@ export default function Index() {
         <AdvisoryMembers/>
         <TimelineSection />
         <Button/>
+        <ContactUs/>
         <Footer />
       </motion.div>
     </div>

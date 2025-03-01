@@ -24,7 +24,10 @@ const OrganizingTeam: React.FC = () => {
             />
             <div className="text-center">
               <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-gray-600">{member.role}</p>
+              <p
+                className="text-gray-600"
+                dangerouslySetInnerHTML={{ __html: member.role }}
+              ></p>
               <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-2 inline-block">
                 <FaLinkedin size={24} />
               </a>

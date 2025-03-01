@@ -21,31 +21,31 @@ const faculty = [
     },
     {
         name: "Mr Prakash V",
-        role: "Assistant Professor & In-Charge Department of Computer Science",
+        role: "Assistant Professor & In-Charge <br> Department of Computer Science",
         image: MrPrakash,
         linkedin: "https://www.linkedin.com/in/prakash88/",
     },
     {
         name: "Ms. Greeshma V.S.",
-        role: "Assistant Professor Department of Computer Science",
+        role: "Assistant Professor <br> Department of Computer Science",
         image: msGreeshma,
         linkedin: "https://www.linkedin.com/in/greeshma-vs-7b074bba/",
     },
     {
         name: "Ms.Manjula S",
-        role: "Assistant Professor Department of Computer Science",
+        role: "Assistant Professor <br> Department of Computer Science",
         image: msManjula,
         linkedin: "#",
     },
     {
         name: "Mr. Suhas Aithal V",
-        role: "Assistant Professor Department of Computer Science",
+        role: "Assistant Professor <br> Department of Computer Science",
         image: MrSuhas,
         linkedin: "https://www.linkedin.com/in/suhas-aithal-v-834511b4/",
     },
     {
         name: "Ms Lincy J",
-        role: "Assistant Professor Department of Computer Science",
+        role: "Assistant Professor <br> Department of Computer Science",
         image: msLincy,
         linkedin: "https://www.linkedin.com/in/lincy-joseph-a81134174",
     }
@@ -69,7 +69,7 @@ const advisoryBoardMembers = [
         role: "In-charge, Department of Languages"
     },
     {
-        name: "Ms. Mridula A Kulkarni",
+        name: "Ms. Mridula V Kulkarni",
         role: "Co-ordinator, PG Department of Psychology"
     },
 
@@ -81,12 +81,12 @@ const contacts = [
         tell: "+91 9535858730"
     },
     {
-        name: "Mr. Suhas Aithal V",
-        tell: "+91 9738291164"
+        name: "Ms Lincy J",
+        tell: "+91 9738710164"
     },
     {
-        name: "Miss Lincy J",
-        tell: "+91 9738710164"
+        name: "Mr. Suhas Aithal V",
+        tell: "+91 9738291164"
     },
 ]
 

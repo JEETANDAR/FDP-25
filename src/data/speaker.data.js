@@ -4,13 +4,13 @@ import arokiaPaul from "../../staticFiles/arokia_paul.jpeg";
 import sereenaRose from "../../staticFiles/sereena_rose.jpeg";
 import aadithiyab from "../../staticFiles/aadithiyab.jpeg";
 
-const time = 'T15:00:00';
+const time = 'T14:00:00';
 
 const speakerInfo = [
     {
         day: "Day 1",
         date:"01/01/1999",
-        name: "MS.Bhavana",
+        name: "MS.Bhavana".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "UI & UX Design",
         role: "UI & UX Engineer At Renesas - Canada",
         image: msBahavanaMS,
@@ -20,7 +20,7 @@ const speakerInfo = [
     {
         day: "Day 2",
         date:"01/01/1999",
-        name: "PROF. PANDURANGAAPPA H",
+        name: "PROF. PANDURANGAAPPA H".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "5G Technologies & Beyond",
         role: "Don Bosco Institute of Management Studies & Computer Applications",
         image: profPANDURANGAPPA,
@@ -30,7 +30,7 @@ const speakerInfo = [
     {
         day: "Day 3",
         date:"01/01/1999",
-        name: "DR. Adithya Pothan Raj. V",
+        name: "DR. Adithya Pothan Raj. V".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "People-Centric AI In Emerging Technologies",
         role: "Lead Architect - Cognizant Technology Solutions - Canada",
         image: aadithiyab,
@@ -40,7 +40,7 @@ const speakerInfo = [
     {
         day: "Day 4",
         date:"01/01/1999",
-        name: "DR Arokia Paul Rajan R",
+        name: "DR Arokia Paul Rajan R".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "AWS Essentials: Your Launchpad to the cloud",
         role: "Professor at Christ University Lavasa Campus-Pune",
         image: arokiaPaul,
@@ -50,7 +50,7 @@ const speakerInfo = [
     {
         day: "Day 5",
         date: "01/01/9999",
-        name: "DR. Sareena Rose",
+        name: "DR. Sareena Rose".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "Machine Learning in Cybersecurity - Intrusion Detection, Malware Classification",
         role: "HOD - Department of Computer Science Vimal College Thrissur",
         image: sereenaRose,

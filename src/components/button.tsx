@@ -65,7 +65,7 @@ const StyledWrapper = styled.div`
 
   /* Responsive styles for tablets (768px) */
   @media (max-width: 1024px) {
-    top: 91.8%; /* Moves button lower for tablets */
+    top: 90.8%; /* Moves button lower for tablets */
     .btn {
       font-size: 18px;
       padding: 12px 24px;
@@ -74,7 +74,7 @@ const StyledWrapper = styled.div`
 
   /* Responsive styles for small laptops (1024px) */
   @media (min-width: 1024px) {
-    top: 90.44%; /* Moves button even lower */
+    top: 89.44%; /* Moves button even lower */
     .btn {
       font-size: 20px;
       padding: 14px 28px;
@@ -92,7 +92,7 @@ const StyledWrapper = styled.div`
 
   /* Responsive styles for ultra-wide screens (2560px and above) */
   @media (min-width: 2560px) {
-    top: 90.5%; /* Pushes button to the bottom */
+    top: 89.5%; /* Pushes button to the bottom */
     .btn {
       font-size: 24px;
       padding: 18px 36px;

@@ -9,10 +9,12 @@ const ContactUs: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-6">
-      <div className="bg-gray-100 p-6 rounded-lg shadow-lg w-full max-w-5xl flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 relative">
-        {/* Contact title moved to the top center inside the box with bottom margin */}
-        <h2 className="text-xl md:text-2xl font-bold text-center w-full absolute top-4 mb-6">Contact</h2>
-        <div className="mt-16 w-full flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
+      {/* Contact title outside the box */}
+      <h2 className="text-xl md:text-2xl font-bold text-center w-full pt-4 pb-2 mb-6">Get in touch with us</h2>
+
+      
+      <div className="bg-gray-100 p-6 rounded-lg shadow-lg w-full max-w-5xl flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
+        <div className="w-full flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
           {contacts.map((contact, index) => (
             <div 
               key={index}

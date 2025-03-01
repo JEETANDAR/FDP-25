@@ -38,7 +38,7 @@ const App = () => {
         setFadeOut(true); // Start fade-out effect
         setTimeout(() => {
           setIsLoadingComplete(true);
-        }, 1000); // Wait for fade-out transition (1s)
+        }, 2000); // Wait for fade-out transition (1s)
         clearInterval(checkLoading);
       }
     }, 100); // Check every 100ms

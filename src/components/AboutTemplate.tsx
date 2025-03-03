@@ -39,12 +39,13 @@ export default function AboutTemplate({
 
             {/* Text on the right side */}
             <div className="w-full md:w-2/3">
-              {paragraphs.map((paragraph, index) => (
-                <p className="text-black mb-4 text-center" key={`paragraph-${index}`}>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+  {paragraphs.map((paragraph, index) => (
+    <p className="text-black mb-4 text-justify" key={`paragraph-${index}`}>
+      {paragraph}
+    </p>
+  ))}
+</div>
+
           </div>
         </motion.div>
       </div>

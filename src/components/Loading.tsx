@@ -12,11 +12,11 @@ function Loading({ onComplete }: { onComplete: () => void }) {
           clearInterval(fillInterval);
           setTimeout(() => {
             setIsFadingOut(true);
-            setTimeout(onComplete, 2000); // Wait for full fade-out
-          }, 2000); // Extra time before fading
+            setTimeout(onComplete,2000);
+          }, 2000);
           return prev;
         }
-        return prev + 1;
+        return prev + 1.5;
       });
     }, 50);
 
@@ -25,92 +25,58 @@ function Loading({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div
-      className={`min-h-screen w-full bg-[#fbd1a2] flex flex-col items-center justify-center ${isFadingOut ? "fade-out" : ""
-        }`}
+      className={`min-h-screen w-full bg-[#fbd1a2] flex flex-col items-center justify-center px-4 ${
+        isFadingOut ? "fade-out" : ""
+      }`}
     >
       <style>
         {`
         @keyframes fadeOut {
           0% { opacity: 1; }
-          10% { opacity: 0.9; }
-          20% { opacity: 0.7; }
-          50% { opacity: 0.5; }
-          60% { opacity: 0.4; }
-          70% { opacity: 0.2; }
           100% { opacity: 0; }
         }
-  
         .fade-out {
           animation: fadeOut 2s ease-out forwards;
         }
       `}
       </style>
 
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gray-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+      <div className="relative z-10 flex flex-col items-center justify-center p-4 sm:p-8">
         <div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gray-400 rounded-full filter blur-3xl opacity-20 animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div
-          className="absolute top-1/2 right-1/3 w-40 h-40 bg-gray-300 rounded-full filter blur-3xl opacity-20 animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
+          className="text-center text-lg sm:text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-2 tracking-widest uppercase"
+        >
+          ST PAUL'S COLLEGE
+        </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center p-8">
-        <div className="relative mb-8">
-          <div className="block md:hidden">
-            <div className="relative flex flex-col">
-              {["P", "E", "G", "A", "S", "U", "S"].map((letter, index) => (
-                <div
-                  key={index}
-                  className="relative text-5xl font-bold text-transparent mb-1"
-                  style={{ WebkitTextStroke: "1.5px #3b82f6" }}
-                >
-                  {letter}
-                  <div
-                    className="absolute top-0 left-0 text-5xl font-bold text-blue-500 overflow-hidden transition-all duration-300 ease-out"
-                    style={{
-                      height: `${Math.max(0, Math.min(100, fillPercentage - index * 5))}%`,
-                      WebkitBackgroundClip: "text",
-                      backgroundImage: "linear-gradient(to top, #60a5fa, #3b82f6)",
-                      color: "transparent",
-                      filter: "drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))",
-                    }}
-                  >
-                    {letter}
-                  </div>
-                </div>
-              ))}
+        <div className="text-center text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mb-4 tracking-widest uppercase font-serif">
+          DEPARTMENT OF COMPUTER SCIENCE
+        </div>
+
+        <div className="relative mb-6 md:mb-8 w-full flex justify-center">
+          <div className="relative">
+            <div
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-transparent whitespace-nowrap"
+              style={{ WebkitTextStroke: "2px #3b82f6" }}
+            >
+              PEGASUS
             </div>
-          </div>
 
-          <div className="hidden md:block">
-            <div className="relative">
-              <div
-                className="text-8xl font-bold text-transparent"
-                style={{ WebkitTextStroke: "2px #3b82f6" }}
-              >
-                PEGASUS
-              </div>
-              <div
-                className="absolute top-0 left-0 text-8xl font-bold text-blue-500 overflow-hidden transition-all duration-300 ease-out"
-                style={{
-                  width: `${fillPercentage}%`,
-                  WebkitBackgroundClip: "text",
-                  backgroundImage: "linear-gradient(to right, #60a5fa, #3b82f6)",
-                  color: "transparent",
-                  filter: "drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))",
-                }}
-              >
-                PEGASUS
-              </div>
+            <div
+              className="absolute top-0 left-0 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-blue-500 overflow-hidden transition-all duration-300 ease-out"
+              style={{
+                width: `${fillPercentage}%`,
+                WebkitBackgroundClip: "text",
+                backgroundImage: "linear-gradient(to right, #60a5fa, #3b82f6)",
+                color: "transparent",
+                filter: "drop-shadow(0 0 8px rgba(59, 130, 246, 0.5))",
+              }}
+            >
+              PEGASUS
             </div>
           </div>
         </div>
 
-        <div className="flex items-center space-x-2 text-gray-700 font-light tracking-wider text-sm md:text-xl">
+        <div className="flex flex-wrap justify-center space-x-1 sm:space-x-2 text-gray-700 font-light tracking-wider text-xs sm:text-sm md:text-lg">
           <span>CODE</span>
           <span className="text-blue-500">•</span>
           <span>INNOVATE</span>
@@ -118,8 +84,10 @@ function Loading({ onComplete }: { onComplete: () => void }) {
           <span>TRANSFORM</span>
         </div>
 
-        <div className="mt-8 text-blue-400 animate-pulse">
-          <Sparkles size={24} />
+        <div className="mt-6 sm:mt-8 text-blue-400 animate-pulse">
+        <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 animate-pulse" />
+
+
         </div>
       </div>
     </div>

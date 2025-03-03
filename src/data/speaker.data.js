@@ -10,7 +10,7 @@ const speakerInfo = [
     {
         day: "Day 1",
         date:"01/01/1999",
-        name: "MS.Bhavana".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
+        name: "MS.Bhavana M S".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "UI & UX Design",
         role: "UI & UX Engineer At Renesas - Canada",
         image: msBahavanaMS,
@@ -30,7 +30,7 @@ const speakerInfo = [
     {
         day: "Day 3",
         date:"01/01/1999",
-        name: "DR. Adithya Pothan Raj. V".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
+        name: "DR. Adithya Pothan Raj V".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "People-Centric AI In Emerging Technologies",
         role: "Lead Architect - Cognizant Technology Solutions - Canada",
         image: aadithiyab,
@@ -40,9 +40,9 @@ const speakerInfo = [
     {
         day: "Day 4",
         date:"01/01/1999",
-        name: "DR Arokia Paul Rajan R".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
+        name: "DR. Arokia Paul Rajan R".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "AWS Essentials: Your Launchpad to the cloud",
-        role: "Associate Professor | School of Science Christ University Lavasa Campus Pune",
+        role: "Associate Professor | School of Science Christ University, Lavasa Campus Pune",
         image: arokiaPaul,
         date: new Date(`2025-03-13${time}`),
         description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."
@@ -52,7 +52,7 @@ const speakerInfo = [
         date: "01/01/9999",
         name: "DR. Sareena Rose".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "Machine Learning in Cybersecurity - Intrusion Detection, Malware Classification",
-        role: "HOD - Department of Computer Science Vimala College Thrissur",
+        role: "HOD-Department of Computer Science Vimala College Thrissur",
         image: sereenaRose,
         date: new Date(`2025-03-14${time}`),
         description: "This session covers the fundamental concepts of Artificial Intelligence and Machine Learning. Participants will learn about the historical development of AI, key algorithms, and practical applications in various domains. The session also explores the ethical considerations and future directions of AI technology."

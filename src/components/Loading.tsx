@@ -45,7 +45,7 @@ function Loading({ onComplete }: { onComplete: () => void }) {
         <div
           className="text-center text-lg sm:text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-2 tracking-widest uppercase"
         >
-          ST PAUL'S COLLEGE
+          ST PAULS COLLEGE
         </div>
 
         <div className="text-center text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mb-4 tracking-widest uppercase font-serif">

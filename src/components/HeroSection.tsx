@@ -57,21 +57,24 @@ export default function HeroSection() {
           {/* Added spacing above "DEPARTMENT OF COMPUTER SCIENCE" */}
 
 
-<h4 className="text-blue-950 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-widest mb-5 font-mono pt-5 sm:pt-0">
+          <h4 className="bg-gradient-to-r from-gray-800 via-blue-900 to-black bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-widest mb-5 font-mono pt-5 sm:pt-0">
   DEPARTMENT OF COMPUTER SCIENCE
 </h4>
 
-<h4 className="text-blue-950 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-widest mb-5 font-mono">
+
+
+<h4 className="bg-gradient-to-r from-gray-900 via-black to-gray-700 bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-widest mb-5 font-mono">
   PRESENTS
 </h4>
 
-<h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-black mb-4 leading-tight font-serif relative">
-  <span className="absolute top-1 left-1 text-gray-1000 opacity-30 blur-sm">
-    International Faculty Development Program
+<h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-6xl font-extrabold text-black mb-4 leading-tight font-serif">
+  <span className="absolute inset-0 text-gray-800 opacity-20 blur-md select-none">
+    5-Day International Online Faculty Development Program
   </span>
-  International Online Faculty Development Program
+  <span className="relative block text-center">
+    5-Day International Online Faculty Development Program
+  </span>
 </h1>
-
 
 
 

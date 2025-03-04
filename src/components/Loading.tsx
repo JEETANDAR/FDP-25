@@ -25,7 +25,7 @@ function Loading({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div
-      className={`min-h-screen w-full bg-[#fbd1a2] flex flex-col items-center justify-center px-4 ${
+      className={`min-h-screen w-full bg-[#000000] flex flex-col items-center justify-center px-4 ${
         isFadingOut ? "fade-out" : ""
       }`}
     >
@@ -48,7 +48,7 @@ function Loading({ onComplete }: { onComplete: () => void }) {
           ST PAULS COLLEGE
         </div>
 
-        <div className="text-center text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mb-4 tracking-widest uppercase font-serif">
+        <div className="text-center text-sm sm:text-lg md:text-xl font-semibold text-blue-200 mb-4 tracking-widest uppercase font-serif">
           DEPARTMENT OF COMPUTER SCIENCE
         </div>
 
@@ -76,11 +76,11 @@ function Loading({ onComplete }: { onComplete: () => void }) {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center space-x-1 sm:space-x-2 text-gray-700 font-light tracking-wider text-xs sm:text-sm md:text-lg">
+        <div className="flex flex-wrap justify-center space-x-1 sm:space-x-2 text-white font-light tracking-wider text-xs sm:text-sm md:text-lg">
           <span>CODE</span>
-          <span className="text-blue-500">•</span>
+          <span className="text-blue-700">•</span>
           <span>INNOVATE</span>
-          <span className="text-blue-500">•</span>
+          <span className="text-blue-700">•</span>
           <span>TRANSFORM</span>
         </div>
 

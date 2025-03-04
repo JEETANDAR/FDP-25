@@ -1,7 +1,7 @@
 import msBahavanaMS from '../../staticFiles/bhavana.jpeg';
 import profPANDURANGAPPA from "../../staticFiles/pandurangappa.jpeg";
 import arokiaPaul from "../../staticFiles/arokia_paul.jpeg";
-import sereenaRose from "../../staticFiles/sereena_rose.jpeg";
+import sereenaRose from "../../staticFiles/sereena_rose.jpg";
 import aadithiyab from "../../staticFiles/aadithiyab.jpeg";
 
 const time = 'T14:00:00';
@@ -10,7 +10,7 @@ const speakerInfo = [
     {
         day: "Day 1",
         date:"01/01/1999",
-        name: "MS.Bhavana M S".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
+        name: "MS. Bhavana M S".toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()),
         title: "UI & UX Design",
         role: "UI & UX Engineer At Renesas - Canada",
         image: msBahavanaMS,

@@ -16,12 +16,14 @@ import clgPhot from '../../staticFiles/aboutSection/collegePhoto.jpeg';
 import deptPhot from '../../staticFiles/aboutSection/aboutDept.jpg';
 import fdpPhot from '../../staticFiles/aboutSection/aboutFDP.jpeg';
 
+
 const aboutInfo = [
   {
     title: "About Our College",
     paragraphs: [
       "ST PAULS COLLEGE, Bengaluru, is a premier institution established by the Society of St Paul, a global Catholic organization founded in 1914 by Blessed James Alberione. Spread across 39 countries, the Society is committed to excellence in education.",
-      "Affiliated with Bangalore University and recognized by the Government of Karnataka, the college is located in Nagasandra, near Bengaluru's Peenya Industrial Area, with excellent connectivity via road and Namma Metro. Accredited with a B++ Grade (CGPA 2.97) by NAAC, it is renowned for its quality education and innovative practices."
+      "Affiliated with Bangalore University and recognized by the Government of Karnataka, the college is located in Nagasandra, near Bengaluru’s Peenya Industrial Area, with excellent connectivity via road and Namma Metro.",
+      "Accredited with a B++ Grade (CGPA 2.97) by NAAC, it is renowned for its quality education and innovative practices."
     ],
     image: clgPhot,
   },
